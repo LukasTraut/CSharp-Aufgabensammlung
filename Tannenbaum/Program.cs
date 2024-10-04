@@ -51,8 +51,20 @@ namespace Tannenbaum
         }
         static void ZeichneStamm(int stammbreite, int stammhöhe, int kronenhöhe)
         {
+            
+            int sba = kronenhöhe / 2;
+            string SH = kronenhöhe.ToString();
+            int kronenbreite = (kronenhöhe * 2) - 1;
+            int links_space = (kronenbreite / 2) - 1;
 
+            string kronen = new string('*', stammbreite);
+            string links_string = new string(' ', links_space);
+            for (int ls = 0; ls <= stammhöhe -1; ls++)
+            {
+
+                Console.WriteLine(links_string + kronen);
+
+            }
         }
-        
     }
 }
